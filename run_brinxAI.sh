@@ -8,14 +8,14 @@ read -p "Enter a unique number for the folder instance: " FOLDER_ID
 FOLDER_NAME="BrinxAI_Worker_${FOLDER_ID}"
 
 # Define the GitHub repository and installation script
-REPO_URL="https://github.com/motza007/BrinxAI-Worker-Nodes-main"
+REPO_URL="https://github.com/motza007/BrinxAI-Worker-Nodes"
 INSTALL_SCRIPT="install_ubuntu.sh"
 
 # Download and extract the repository
 echo "Downloading repository..."
-curl -L -o BrinxAI-Worker-Nodes-main.zip "$REPO_URL/archive/refs/heads/main.zip"
-unzip -q BrinxAI-Worker-Nodes-main.zip
-mv BrinxAI-Worker-Nodes-main-main "$FOLDER_NAME"
+curl -L -o BrinxAI-Worker-Nodes.zip "$REPO_URL/archive/refs/heads/main.zip"
+unzip -q BrinxAI-Worker-Nodes.zip
+mv BrinxAI-Worker-Nodes-main "$FOLDER_NAME"
 rm BrinxAI-Worker-Nodes-main.zip
 
 # Change into the folder
