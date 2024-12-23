@@ -15,8 +15,8 @@ REPO_URL="https://github.com/motza007/BrinxAI-Worker-Nodes"
 echo "Downloading repository..."
 curl -L -o BrinxAI-Worker-Nodes.zip "$REPO_URL/archive/refs/heads/main.zip"
 unzip -q BrinxAI-Worker-Nodes.zip
-mv BrinxAI-Worker-Nodes-main "$FOLDER_NAME"
-rm BrinxAI-Worker-Nodes-main.zip
+mv BrinxAI-Worker-Nodes "$FOLDER_NAME"
+rm BrinxAI-Worker-Nodes.zip
 
 # Change into the folder
 cd "$FOLDER_NAME"
