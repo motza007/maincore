@@ -9,7 +9,7 @@ FOLDER_NAME="BrinxAI_Worker_${FOLDER_ID}"
 
 # Define the GitHub repository and installation script
 REPO_URL="https://github.com/motza007/BrinxAI-Worker-Nodes"
-INSTALL_SCRIPT="install_ubuntu.sh"
+
 
 # Download and extract the repository
 echo "Downloading repository..."
@@ -22,11 +22,8 @@ rm BrinxAI-Worker-Nodes-main.zip
 cd "$FOLDER_NAME"
 
 # Make the installation script executable
-echo "Making $INSTALL_SCRIPT executable..."
-chmod +x "$INSTALL_SCRIPT"
+chmod +x install_ubuntu.sh
 
-# Run the installation script
-echo "Running $INSTALL_SCRIPT..."
-./"$INSTALL_SCRIPT"
+./install_ubuntu.sh
 
 
