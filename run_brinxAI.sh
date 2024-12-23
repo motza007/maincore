@@ -2,6 +2,7 @@
 
 # Exit immediately if a command exits with a non-zero status
 set -e
+sudo apt-get install dos2unix
 
 # Prompt user for unique folder ID
 read -p "Enter a unique number for the folder instance: " FOLDER_ID
@@ -20,9 +21,10 @@ rm BrinxAI-Worker-Nodes.zip
 # Change into the folder
 cd "$FOLDER_NAME"
 
+
 # Make the installation script executable
 chmod +x install_ubuntu.sh
-
+dos2unix install_ubuntu.sh
 ./install_ubuntu.sh
 
 
